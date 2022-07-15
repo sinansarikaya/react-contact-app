@@ -1,17 +1,11 @@
 import React from "react";
 import "./App.css";
-import List from "./components/Contacts/List";
-import Form from "./components/Contacts/Form";
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
     <div className="App">
-      <div className="List">
-        <List />
-      </div>
-      <div className="Form">
-        <Form />
-      </div>
+      <Contacts />
     </div>
   );
 }

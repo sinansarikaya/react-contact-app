@@ -1,25 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function Form() {
-  const [form, setForm] = useState({ fullname: "", phone_number: "" });
+const initialFormValues = { fullname: "", phone_number: "" };
+function Form({ addContact, contacts }) {
+  const [form, setForm] = useState(initialFormValues);
+
+  useEffect(() => {
+    setForm(initialFormValues);
+  }, [contacts]);
+
   const onChangeInput = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  const onSubmit = () => {
-    console.log(form);
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (form.fullname === "" || form.phone_number === "") {
+      return false;
+    }
+
+    addContact([...contacts, form]);
   };
   return (
     <form onSubmit={onSubmit}>
       <input
         className="input"
-        name="fullName"
+        name="fullname"
         placeholder="Enter a Full Name"
+        value={form.fullname}
         onChange={onChangeInput}
       />
       <input
         className="input"
         name="phone_number"
         placeholder="Enter a Phone Number"
+        value={form.phone_number}
         onChange={onChangeInput}
       />
       <button className="button">Add New Contact</button>

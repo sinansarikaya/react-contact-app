@@ -12,10 +12,7 @@ body {
   padding: 20px;
 }
 .List {
-  height: 65%;
-}
-.Form {
-  height: 35%;
+  height: 330px;
 }
 .input {
   width: 100%;
