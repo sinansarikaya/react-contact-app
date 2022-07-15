@@ -20,7 +20,9 @@ function List({ contacts }) {
 
       <ul>
         {filtered.map((contact, i) => (
-          <li key={i}>{contact.fullname}</li>
+          <li key={i}>
+            {contact.fullname} - {contact.phone_number}
+          </li>
         ))}
       </ul>
     </div>

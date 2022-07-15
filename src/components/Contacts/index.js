@@ -6,11 +6,11 @@ import Form from "./Form";
 function Contacts() {
   const [contacts, setContacts] = useState([
     {
-      fullname: "Sinan",
+      fullname: "Sinan Sarikaya",
       phone_number: "123123",
     },
     {
-      fullname: "Mehmet",
+      fullname: "Mehmet Ates",
       phone_number: "233445",
     },
   ]);
