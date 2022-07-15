@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 const initialFormValues = { fullname: "", phone_number: "" };
+
 function Form({ addContact, contacts }) {
   const [form, setForm] = useState(initialFormValues);
 
@@ -13,6 +14,7 @@ function Form({ addContact, contacts }) {
   };
   const onSubmit = (e) => {
     e.preventDefault();
+
     if (form.fullname === "" || form.phone_number === "") {
       return false;
     }
