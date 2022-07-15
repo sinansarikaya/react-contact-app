@@ -25,6 +25,7 @@ function List({ contacts }) {
           </li>
         ))}
       </ul>
+      <p>Total contacts - {filtered.length}</p>
     </div>
   );
 }

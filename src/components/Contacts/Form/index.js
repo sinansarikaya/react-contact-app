@@ -31,6 +31,8 @@ function Form({ addContact, contacts }) {
         onChange={onChangeInput}
       />
       <input
+        type="tel"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
         className="input"
         name="phone_number"
         placeholder="Enter a Phone Number"
