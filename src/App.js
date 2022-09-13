@@ -4,8 +4,10 @@ import Contacts from "./components/Contacts";
 
 function App() {
   return (
-    <div className="App">
-      <Contacts />
+    <div id="container">
+      <div className="App">
+        <Contacts />
+      </div>
     </div>
   );
 }
