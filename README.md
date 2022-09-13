@@ -1,6 +1,6 @@
 # Demo
+
 ## <a href='https://reactcontacts-app.netlify.app/'> Click here for demo</a>
-![](https://github.com/sinansarikaya/react-contact-app/blob/main/contactApp.gif)
 
 # Getting Started with Create React App
 
