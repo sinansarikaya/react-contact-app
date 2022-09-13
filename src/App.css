@@ -122,7 +122,6 @@
   background-color: #f8f7f7;
   border-radius: 2rem;
   width: 50%;
-  height: 50%;
   top: 25%;
   left: 25%;
   padding: 2rem;
@@ -146,6 +145,12 @@
 #Form .footer .modal .fa-xmark {
   align-self: flex-end;
   cursor: pointer;
+  color: #7a7b7b;
+  font-size: 1.2rem;
+  transition: color 0.5s;
+}
+#Form .footer .modal .fa-xmark:hover {
+  color: #181818;
 }
 #Form .footer .modal .form-input {
   width: 100%;
@@ -174,6 +179,7 @@
   padding: 1rem;
   cursor: pointer;
   font-weight: bold;
+  transition: background 0.5s;
 }
 #Form .footer .modal .form-input .submit:hover {
   background-color: rgba(87, 146, 176, 70%);
@@ -181,6 +187,11 @@
 #Form .footer .fa-plus {
   font-size: 3rem;
   cursor: pointer;
+  color: #5792b0;
+  transition: color 0.5s;
+}
+#Form .footer .fa-plus:hover {
+  color: rgba(87, 146, 176, 70%);
 }
 #Form .footer .total {
   color: #5792b0;
