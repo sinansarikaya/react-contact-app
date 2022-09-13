@@ -1,31 +1,19 @@
-import { useState } from "react";
-
-function List({ contacts }) {
-  const [filterText, setFilterText] = useState("");
-
-  const filtered = contacts.filter((item) => {
-    return Object.keys(item).some((key) =>
-      item[key].toString().toLowerCase().includes(filterText.toLowerCase())
-    );
-  });
-
+function List({ filtered }) {
   return (
     <div>
-      <input
-        className="input"
-        placeholder="Filter Contact"
-        value={filterText}
-        onChange={(e) => setFilterText(e.target.value)}
-      />
-
-      <ul>
+      <ul className="user-list">
         {filtered.map((contact, i) => (
-          <li key={i}>
-            {contact.fullname} - {contact.phone_number}
+          <li className="user-item" key={i}>
+            <div className="user-picture">
+              <i className="fa-solid fa-user"></i>
+            </div>
+            <div className="user-description">
+              <div className="user-name">{contact.fullname}</div>
+              <div className="user-phone">{contact.phone_number}</div>
+            </div>
           </li>
         ))}
       </ul>
-      <p>Total contacts - {filtered.length}</p>
     </div>
   );
 }
