@@ -23,10 +23,6 @@ function Contacts() {
     );
   });
 
-  useEffect(() => {
-    console.log(contacts);
-  }, [contacts]);
-
   return (
     <div className="content">
       <div id="Search">
