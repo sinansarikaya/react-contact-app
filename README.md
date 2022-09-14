@@ -20,6 +20,20 @@ $ npm install
 $ npm start
 ```
 
+### Or
+
+```
+$ git clone https://github.com/sinansarikaya/react-contact-app.git
+```
+
+```
+$ yarn add react
+```
+
+```
+$ yarn start
+```
+
 <hr />
 
 ### Demo
