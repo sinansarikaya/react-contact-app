@@ -4,7 +4,7 @@ function index() {
   return (
     <div className="social">
       <a
-        href="hhttps://github.com/sinansarikaya/react-contact-app"
+        href="https://github.com/sinansarikaya/react-contact-app"
         target="_blank"
       >
         <i class="fa-brands fa-github"></i>
