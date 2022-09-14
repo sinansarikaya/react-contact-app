@@ -3,7 +3,10 @@ import React from "react";
 function index() {
   return (
     <div className="social">
-      <a href="https://reactcontacts-app.netlify.app/" target="_blank">
+      <a
+        href="hhttps://github.com/sinansarikaya/react-contact-app"
+        target="_blank"
+      >
         <i class="fa-brands fa-github"></i>
       </a>
       <a href="https://www.linkedin.com/in/sinansarykaya/" target="_blank">
