@@ -4,7 +4,7 @@ import List from "./List";
 import Form from "./Form";
 import Search from "./Search";
 
-function Contacts() {
+function Contacts({ alert, setAlert }) {
   const [contacts, setContacts] = useState([
     {
       fullname: "Sinan Sarikaya",
@@ -41,6 +41,8 @@ function Contacts() {
           addContact={setContacts}
           contacts={contacts}
           filtered={filtered}
+          setAlert={setAlert}
+          alert={alert}
         />
       </div>
     </div>
