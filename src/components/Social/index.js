@@ -7,13 +7,13 @@ function index() {
         href="https://github.com/sinansarikaya/react-contact-app"
         target="_blank"
       >
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
       <a href="https://www.linkedin.com/in/sinansarykaya/" target="_blank">
-        <i class="fa-brands fa-linkedin-in"></i>
+        <i className="fa-brands fa-linkedin-in"></i>
       </a>
       <a href="https://www.instagram.com/sinan.sarykaya" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-instagram"></i>
       </a>
     </div>
   );

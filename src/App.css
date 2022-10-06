@@ -245,6 +245,13 @@
 #copyright .heart {
   color: rgb(226, 85, 85);
 }
+#copyright a {
+  color: #7a7b7b;
+  transition: color 0.5s ease-in-out;
+}
+#copyright a:hover {
+  color: hsl(180, 0%, 68%);
+}
 
 @media (max-width: 1100px) {
   .App {

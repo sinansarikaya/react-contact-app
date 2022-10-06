@@ -4,7 +4,11 @@ function index() {
   return (
     <footer id="copyright">
       Made with<span className="heart"> ♥ </span>
-      <b>Sinan Sarıkaya</b>
+      <b>
+        <a href="https://github.com/sinansarikaya" target={"_blank"}>
+          Sinan Sarıkaya
+        </a>
+      </b>
     </footer>
   );
 }
